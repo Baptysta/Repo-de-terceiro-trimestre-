@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contador</h1>
+    <button onclick="cliques()">Clique aqui</button>
+    <p id="menagem">O botão ja foi clicado 0 vezes.</p>
+    
+    <script>
+        let contador = 0;
+        function cliques() {
+            contador++;
+            document.getElementById("mensagem").textContent =
+            `O botão já foi clicado ${contador} ${contador === 1 ? 'vez' : 'vezes'}.`;
+
+        }
+    </script>
+</body>
+</html>

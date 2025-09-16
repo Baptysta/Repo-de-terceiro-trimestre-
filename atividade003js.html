@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 003 JS</title>
+</head>
+
+<body>
+    <h1>Seu nome aqui!</h1>
+    <button onclick="nome()">Seu nome</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function nome() {
+            let nomeUsuario = prompt('digite seu nome');
+            let resposta = document.getElementById('mensagem');
+            resposta.innerHTML = "olá, " + nome + "!é um prazer te conhecer";
+
+        }
+        
+    </script>
+</body>
+
+</html>
